@@ -5,7 +5,6 @@ env/
 
 # Model Weights
 dolphin-8b-4bit/
-*.safetensors
 *.bin
 
 # Datasets

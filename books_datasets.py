@@ -6,7 +6,8 @@ import os
 import shutil
 
 # Download latest version
-path = kagglehub.dataset_download("lokeshparab/gutenberg-books-and-metadata-2025")
+#path = kagglehub.dataset_download("lokeshparab/gutenberg-books-and-metadata-2025")
+path = "extracted_books"
 
 print("Path to dataset files:", path)
 
