@@ -2,10 +2,12 @@
 
 <h2>AI Storyteller</h2>
 <p1></p1>LLM which pulls the user into a deep and descriptive story, playing both characters and the narrator.
-An immersive interactive storytelling experience where you play as the main character. The AI acts as the narrator and controls all other characters with distinct voices and personalities.</p1>
+An immersive interactive storytelling experience where you play as the main character. The AI acts as the narrator and controls all other characters with distinct voices and personalities.
+<br><br>Using <b>Synthetic Data Generation</b> to produce train.jsonl and valid.jsonl files to tune the <b>base model Dolphine 8B - 4bit</b>.</p1>
 
 <h2>First Tuning - Conversation building and Structural Development:</h2>
-```{
+<br> Example of a train data used:<br><br>
+{
   "messages": [
     {
       "role": "system",
@@ -20,11 +22,11 @@ An immersive interactive storytelling experience where you play as the main char
       "content": "Flour is dusting the countertops, and a smear of sauce ends up on your cheek, which you retaliate by lightly splashing them with water. Laughter fills the kitchen, warm and genuine, as you navigate the cramped space together. It is a chaotic, imperfect scene, but as you catch them looking at you with a soft, indulgent smile, you realize that you would choose this messy, everyday life over anything else."
     }
   ]
-}```
-<h3>Stats:</h3>
-Iter 3000: Val loss 1.179, Val took 48.899s
-Iter 3000: Train loss 0.365, Learning Rate 1.000e-05, It/sec 0.171, Tokens/sec 32.554, Trained Tokens 561002, Peak mem 6.052 GB</p2>
+}
 
+<h2>Second Tuning - Spacial Awareness, Physical Understanding</h2>
+<br> Example of a train data used:<br><br>
+{"messages": [{"role": "system", "content": "Maintain strict tracking of physical locations. Assistant (Narrator) must always start with dialogue and ask the user a question to anchor the scene."}, {"role": "assistant", "content": "\"The laboratory is going to explode! Is there a backup escape route through the lab sub-level?\" The alarm is deafening, and the walls are beginning to buckle."}, {"role": "user", "content": "I check the floor plans. 'There's a service tunnel under the floor. Can you move this metal plate?'"}, {"role": "assistant", "content": "My friend shoves the heavy table aside. 'I’ve got it! Is there a ladder underneath?'"}, {"role": "user", "content": "I look down. 'Yes! Follow me!'"}, {"role": "assistant", "content": "We drop down, the lab erupting into flames above our heads."}]}
 
 
 
