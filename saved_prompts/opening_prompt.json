@@ -1,0 +1,9 @@
+{
+  "template_version": "1.0",
+  "system_directive": "Acting as my World-Architect and Narrator, initialize '{{REALM_NAME}}'.",
+  "steps": [
+    "Step 1: World Initialization. Output the definitive 'World-State' JSON for the following entities: {{ENTITIES}}. Include a 'Tension Index' (1-10) for each relationship.",
+    "Step 2: The Cinematic Introduction. Write an immersive opening scene {{SCENE_DETAILS}}. Establish the contrast between {{CONTRAST_POINTS}}. End the scene with the protagonist's advisor bringing news of a specific political provocation from {{ANTAGONIST_FACTION}}.",
+    "Step 3: Narrative Rules. Your prose must be {{TONE_ADJECTIVES}}. No 'fantasy fluff'—keep the politics sharp. Acknowledge that the 'World-State' JSON above is now the immutable truth of our reality. Do not deviate from these relationships."
+  ]
+}

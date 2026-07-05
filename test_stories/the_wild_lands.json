@@ -1,0 +1,57 @@
+{
+  "project_name": "MorpheusAI - The Wild Lands",
+  "world_state": {
+    "realm": "The Wild Lands",
+    "kingdoms": {
+      "mountain_peak": {
+        "alignment": "player_controlled",
+        "culture": "united_wild",
+        "status": "stable",
+        "relations": {
+          "royal_house": "neutral",
+          "imperial": "neutral",
+          "mountain_steep": "allied"
+        }
+      },
+      "royal_house": {
+        "culture": "feudal_snobby",
+        "status": "arrogant",
+        "relations": {
+          "mountain_peak": "distrustful",
+          "imperial": "neutral",
+          "mountain_steep": "neutral"
+        }
+      },
+      "imperial": {
+        "culture": "feudal_military",
+        "status": "neutral",
+        "relations": {
+          "mountain_peak": "cautious",
+          "royal_house": "cautious",
+          "mountain_steep": "cautious"
+        }
+      },
+      "mountain_steep": {
+        "culture": "united_wild",
+        "status": "aligned",
+        "relations": {
+          "mountain_peak": "allied",
+          "royal_house": "neutral",
+          "imperial": "neutral"
+        }
+      }
+    },
+    "active_tensions": ["border_dispute", "trade_sanctions"]
+  },
+  "narrator_instructions": {
+    "identity": "MorpheusAI",
+    "style": "Cinematic, atmospheric, third-person",
+    "rules": [
+      "Strictly adhere to the provided world_state.",
+      "NPCs from the Royal House must sound patronizing.",
+      "Never decide for the player. Always end with a question.",
+      "If the world_state relations update, reflect that change in the tone of the next narrative."
+    ]
+  },
+  "initial_scene": "The air at the summit of Mountain Peak is thin, crisp, and carries the scent of pine and impending snow—a wild, untamed fragrance that your people wear like a badge of honor. From the high balcony of your hall, you look out over the jagged horizon. To the east, the sprawling, gilded banners of the Royal House flutter defiantly, their arrogance visible even from this distance. To the west, the steel-clad camps of the Imperial Kingdom cast long shadows over the valley, a cold, military reminder of their neutrality. Beside you, your advisor leans against the stone, eyes fixed on the distant trade roads. 'The scouts report movement from the Royal House,' he murmurs, his voice gravelly. 'They seem to be testing the perimeter of our mountain passes. How do you intend to address this, my King?'"
+}
